@@ -21,14 +21,7 @@ with open('trxAdd.txt', newline='',encoding='utf-8') as f:
 count = 0
 remaining = line_count
 for i in range(0, len(mylist)):
-    #api1 = "?"
-    #api2 = "?"
-   # api3 = "?"
-  #  api4 = "?"
- #   api5 = "?"
-#    api6  = "?"
- #   mylistapi = [str(api1),str(api2),str(api3),str(api4),str(api5),str(api6)]
-  #  apikeys = random.choice(mylistapi)
+
     trxadd = mylist[i]
     blocs = requests.get('https://apilist.tronscan.org/api/account?address='+trxadd)
     ress = blocs.json()
