@@ -1,6 +1,7 @@
 import random
 import colorama
 from colorama import Fore, Back, Style
+
 import ecdsa
 import base58
 import requests
@@ -44,7 +45,7 @@ def seek():
         count += 1
         print(
             "Scan Number : "+str(count) + Fore.GREEN + "\nAddress = " + Wallet + Style.RESET_ALL + " " + Fore.CYAN + "\nPrivate Key = " + privatekey + " " + Style.RESET_ALL + " \n " + Fore.LIGHTRED_EX +"TX " + str(
-                txid) +" TPE: " + str(TYPEX) + "  BAL: " + str(balances) + " TXO: " + str(vipers) + " FRZ : " + str(frozen)+" TPS : "+str(TYPEX1) + Style.RESET_ALL)
+                txid) +" TPE: " + str(TYPEX) + "  BAL: " + str(balances) + " TXO: " + str(vipers) + " FRZ : " + str(frozen)+" TPS : "+str(TYPEX1) + Style.RESET_ALL+"\n==============================[ M M D R Z A . C o M ]================================")
 
 
         if int(txid) > 0:
